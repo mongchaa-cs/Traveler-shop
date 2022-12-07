@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility Classes */
+.container {
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+}
+
+.l-heading {
+    font-size: 40px;
+    color: #3A3A3A;
+}
+
+.lead {
+    font-size: 14px;
+    line-height: 1.7rem;
+}
+
+.item-text {
+    text-align: justify;
+}
+
+.btn {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: white;
+    background-color: #E02C6D;
+    padding: 8px 10px;
+    border-radius: 40px;
+}
+
+.filled {
+    color: #FFC014;
+}
+
+/* Utility Element */
+body {
+    font-family: 'Poppins';
+    display: grid;
+    gap: 30px;
+    /* background-color: #F0E9D2; */
+}
+a, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* Root styling */
+/* Nav Styling */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#navbar > h1 {
+    width: 243px;
+    height: 52px;
+    display: grid;
+    align-items: center;
+} 
+
+#navbar > ul {
+    width: 463px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar > ul > li > a {
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
+/* Showcase Section */
+#showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#showcase > .showcase-content {
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+    width: 582px;
+    height: 270px;
+}
+
+#showcase > .showcase-content > button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 1em;
+    font-family: 'Poppins';
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px;
+    gap: 8px;
+}
+
+#showcase > .showcase-content > button > a {
+    color: white;
+    font-weight: 500;
+}
+
+#showcase > .showcase-img > img {
+    position: absolute;
+    background: url(./images/Circle-design.svg) no-repeat center center/cover;
+}
+#showcase > .showcase-img > img {
+    position: relative;
+    width: 440px;
+    height: 414px;
+}
+
+/* E-commerce Company */
+#e-company {
+    height: 110px;
+    display: grid;
+    align-content: center;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(222, 218, 218);
+    margin: 20px 10px;
+}
+
+#e-company > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Product Item */
+#product {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#product > .item {
+    display: grid;
+    align-content: center;
+    width: 330px;
+    height: 476px;
+    gap: 10px;
+}
+
+#product > .item > img {
+    display: grid;
+    width: 300px;
+    height: 256px;
+    /* gap: 10px; */
+}
+#product > .item > .item-body {
+    display: grid;
+    gap: 6px;
+}
+
+#product > .item > .item-body > .prize-order {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
