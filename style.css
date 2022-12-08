@@ -14,6 +14,10 @@
     overflow: auto;
 }
 
+.logo {
+    color: #3E6D9C;
+}
+
 .l-heading {
     font-size: 40px;
     color: #3A3A3A;
@@ -24,8 +28,22 @@
     line-height: 1.7rem;
 }
 
-.item-text {
+/* Text align */
+.center {
+    text-align: center;
+}
+.justify {
     text-align: justify;
+}
+
+.text-primary {
+    color: #3A3A3A;
+    margin-bottom: 1rem;
+}
+
+.text-secondary {
+    color: #E02C6D;
+    font-weight: 600;
 }
 
 .btn {
@@ -40,6 +58,8 @@
 .filled {
     color: #FFC014;
 }
+
+
 
 /* Utility Element */
 body {
@@ -99,10 +119,10 @@ a, li {
 }
 
 #showcase > .showcase-content > button {
-    
     display: flex;
     justify-content: center;
     align-items: center ;
+    flex-wrap: wrap;
     color: white;
     background-color: #E02C6D;
     border: none;
@@ -133,12 +153,13 @@ a, li {
 
 /* E-commerce Company */
 #e-company {
-    height: 110px;
     display: grid;
+    height: 110px;
     align-content: center;
     padding: 14px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgb(222, 218, 218);
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 10px 2px rgb(222, 218, 218); */
+    box-shadow: 0 2px 8px 0px rgba(0, 0, 0, .2);
     margin: 20px 10px;
 }
 
@@ -159,10 +180,12 @@ a, li {
 
 #product > .item {
     display: grid;
+    justify-content: center;
     align-content: center;
-    width: 330px;
+    width: 300px;
     height: 476px;
     gap: 10px;
+    border-radius: 4px;
 }
 
 #product > .item > img {
@@ -181,4 +204,20 @@ a, li {
     justify-content: flex-start;
     gap: 10px;
     align-items: center;
+}
+
+.btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #E02C6D;
+    float: right;
+
+    font-size: 1em;
+    font-family: 'Poppins';
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px;
+    gap: 8px;
 }
