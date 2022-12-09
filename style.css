@@ -55,6 +55,24 @@
     border-radius: 40px;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 30px;
+
+    font-size: 1em;
+    font-family: 'Poppins';
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px;
+    gap: 8px;
+}
+
 .filled {
     color: #FFC014;
 }
@@ -118,25 +136,7 @@ a, li {
     height: 270px;
 }
 
-#showcase > .showcase-content > button {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    flex-wrap: wrap;
-    color: white;
-    background-color: #E02C6D;
-    border: none;
-    border-radius: 30px;
-
-    font-size: 1em;
-    font-family: 'Poppins';
-    width: 196px;
-    height: 44px;
-    padding: 10px 24px;
-    gap: 8px;
-}
-
-#showcase > .showcase-content > button > a {
+#showcase > .showcase-content > .button > a {
     color: white;
     font-weight: 500;
 }
@@ -158,8 +158,7 @@ a, li {
     align-content: center;
     padding: 14px;
     border-radius: 4px;
-    /* box-shadow: 0px 0px 10px 2px rgb(222, 218, 218); */
-    box-shadow: 0 2px 8px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 8px 0px rgb(222, 218, 218);
     margin: 20px 10px;
 }
 
@@ -192,7 +191,7 @@ a, li {
     display: grid;
     width: 300px;
     height: 256px;
-    /* gap: 10px; */
+    gap: 10px;
 }
 #product > .item > .item-body {
     display: grid;
@@ -220,4 +219,56 @@ a, li {
     height: 44px;
     padding: 10px 24px;
     gap: 8px;
+}
+
+/* Feature Product */
+#feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#feature > .feature-img {
+    display: flex;
+    justify-content: center;
+    width: 404px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+#feature > .feature-img > img {
+    width: 400px;
+    height: 270px;
+}
+#feature > .feature-aside {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    width: 610px;
+    height: 224px;
+}
+
+#feature>.feature-aside > .button {
+    border-radius: 0;
+    color: white;
+}
+#feature>.feature-aside > .button > a {
+    border-radius: 0;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    background-color: #0A0826;
+    color: white;
+    margin: 20px 0 10px 0;
+}
+
+.footer > .media > i {
+    margin-right: 5px;
+    border-radius: 50%;
 }
