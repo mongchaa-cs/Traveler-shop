@@ -1,3 +1,4 @@
+/* Font awesome */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
@@ -28,7 +29,6 @@
     line-height: 1.7rem;
 }
 
-/* Text align */
 .center {
     text-align: center;
 }
@@ -44,6 +44,10 @@
 .text-secondary {
     color: #E02C6D;
     font-weight: 600;
+}
+
+.filled {
+    color: #FFC014;
 }
 
 .btn {
@@ -73,11 +77,9 @@
     gap: 8px;
 }
 
-.filled {
-    color: #FFC014;
+.clr-both {
+    clear: both;
 }
-
-
 
 /* Utility Element */
 body {
@@ -96,6 +98,7 @@ a, li {
 /* Nav Styling */
 #navbar {
     display: flex;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
@@ -108,15 +111,20 @@ a, li {
     align-items: center;
 } 
 
-#navbar > ul {
+#navbar > .category {
+    display: grid;  
+    align-items: center;
     width: 463px;
     height: 36px;
+}
+
+#navbar > .category > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#navbar > ul > li > a {
+#navbar > .category > ul > li > a {
     color: #3A3A3A;
     font-weight: 500;
 }
@@ -135,20 +143,24 @@ a, li {
     width: 582px;
     height: 270px;
 }
-
 #showcase > .showcase-content > .button > a {
     color: white;
     font-weight: 500;
 }
 
-#showcase > .showcase-img > img {
-    position: absolute;
+#showcase > .showcase-img {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 475px;
+    height: 475px;
     background: url(./images/Circle-design.svg) no-repeat center center/cover;
+    position: relative;
 }
 #showcase > .showcase-img > img {
-    position: relative;
     width: 440px;
     height: 414px;
+    position: absolute;
 }
 
 /* E-commerce Company */
@@ -271,4 +283,66 @@ a, li {
 .footer > .media > i {
     margin-right: 5px;
     border-radius: 50%;
+}
+
+
+/* Responsive | Media Query */
+/* Smart phone */
+
+@media (max-width: 500px) {
+    .container {
+            margin: auto;
+            max-width: 500px;
+            overflow: auto;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar {
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* margin-top: 30px; */
+    }
+
+    #navbar {
+        width: 500px;
+        display: flex;
+    }
+
+    #navbar > h1 {
+    width: 43px;
+    height: 52px;
+    display: grid;
+    align-items: center;
+} 
+
+    #navbar > .category > ul > li {
+        display: none;
+} 
+
+    #navbar > .category > ul > li:last-child {
+        display: flex;
+} 
+
+/* Showcase */
+#showcase {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+}
+
+#showcase>.showcase-content {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 582px;
+    height: 270px;
+}
+
+/* Media query responsive work undone */
 }
